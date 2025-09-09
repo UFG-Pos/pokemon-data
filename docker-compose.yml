@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017
+      - DATABASE_NAME=pokemon_db
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  mongodb:
+    image: mongo:7.0
+    ports:
+      - "27019:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=pokemon_db
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
