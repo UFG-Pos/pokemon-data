@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 import os
 from dotenv import load_dotenv
 
-from app.routers import pokemon
+from app.routers import pokemon, pipeline
 from app.services.database import DatabaseService
 from app.config import setup_logging
 
@@ -18,15 +18,24 @@ setup_logging()
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
-    print("Starting Pokemon Agent API...")
-    
+    print("Starting Pokemon Agent API with Pipeline...")
+
     # Initialize database connection
-    db_service = DatabaseService()
-    await db_service.connect()
-    app.state.db_service = db_service
-    
+    global database_service
+    database_service = DatabaseService()
+    await database_service.connect()
+    app.state.db_service = database_service
+
+    # Create data directories
+    from pathlib import Path
+    data_dirs = ["data/exports", "data/reports", "data/dashboards", "data/alerts", "data/temp"]
+    for dir_path in data_dirs:
+        Path(dir_path).mkdir(parents=True, exist_ok=True)
+
+    print("✅ Pipeline services initialized")
+
     yield
-    
+
     # Shutdown
     print("Shutting down Pokemon Agent API...")
     if hasattr(app.state, 'db_service'):
@@ -51,6 +60,7 @@ app.add_middleware(
 
 # Include routers
 app.include_router(pokemon.router, prefix="/api/v1", tags=["pokemon"])
+app.include_router(pipeline.router, tags=["pipeline"])
 
 
 @app.get("/")
@@ -65,6 +75,10 @@ async def root():
 @app.get("/health")
 async def health_check():
     return {"status": "healthy"}
+
+
+# Global database service instance for dependencies
+database_service = None
 
 
 # Dependency to get database service

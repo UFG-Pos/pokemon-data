@@ -12,6 +12,7 @@ services:
       - mongodb
     volumes:
       - .:/app
+      - pipeline_data:/app/data
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
   mongodb:
@@ -25,3 +26,4 @@ services:
 
 volumes:
   mongodb_data:
+  pipeline_data:
