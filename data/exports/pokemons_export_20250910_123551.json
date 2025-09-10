@@ -1,0 +1,679 @@
+{
+  "export_timestamp": "2025-09-10T12:35:51.110371",
+  "total_pokemons": 15,
+  "data": [
+    {
+      "id": 65,
+      "name": "alakazam",
+      "height": 15,
+      "weight": 480,
+      "base_experience": 225,
+      "types": [
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "synchronize",
+          "url": "https://pokeapi.co/api/v2/ability/28/",
+          "is_hidden": false
+        },
+        {
+          "name": "inner-focus",
+          "url": "https://pokeapi.co/api/v2/ability/39/",
+          "is_hidden": false
+        },
+        {
+          "name": "magic-guard",
+          "url": "https://pokeapi.co/api/v2/ability/98/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 50,
+        "defense": 45,
+        "special_attack": 135,
+        "special_defense": 95,
+        "speed": 120
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/65.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/65.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/65.png"
+      },
+      "created_at": "2025-09-09T13:45:14.091000",
+      "updated_at": "2025-09-09T13:45:14.091000"
+    },
+    {
+      "id": 9,
+      "name": "blastoise",
+      "height": 16,
+      "weight": 855,
+      "base_experience": 239,
+      "types": [
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "torrent",
+          "url": "https://pokeapi.co/api/v2/ability/67/",
+          "is_hidden": false
+        },
+        {
+          "name": "rain-dish",
+          "url": "https://pokeapi.co/api/v2/ability/44/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 79,
+        "attack": 83,
+        "defense": 100,
+        "special_attack": 85,
+        "special_defense": 105,
+        "speed": 78
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/9.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/9.png"
+      },
+      "created_at": "2025-09-09T13:45:13.864000",
+      "updated_at": "2025-09-09T13:45:13.864000"
+    },
+    {
+      "id": 6,
+      "name": "charizard",
+      "height": 17,
+      "weight": 905,
+      "base_experience": 240,
+      "types": [
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "blaze",
+          "url": "https://pokeapi.co/api/v2/ability/66/",
+          "is_hidden": false
+        },
+        {
+          "name": "solar-power",
+          "url": "https://pokeapi.co/api/v2/ability/94/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "special_attack": 109,
+        "special_defense": 85,
+        "speed": 100
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/6.png"
+      },
+      "created_at": "2025-09-09T13:45:13.760000",
+      "updated_at": "2025-09-09T13:45:13.760000"
+    },
+    {
+      "id": 132,
+      "name": "ditto",
+      "height": 3,
+      "weight": 40,
+      "base_experience": 101,
+      "types": [
+        {
+          "name": "normal",
+          "url": "https://pokeapi.co/api/v2/type/1/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "limber",
+          "url": "https://pokeapi.co/api/v2/ability/7/",
+          "is_hidden": false
+        },
+        {
+          "name": "imposter",
+          "url": "https://pokeapi.co/api/v2/ability/150/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 48,
+        "attack": 48,
+        "defense": 48,
+        "special_attack": 48,
+        "special_defense": 48,
+        "speed": 48
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/132.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/132.png"
+      },
+      "created_at": "2025-09-09T13:53:27.676000",
+      "updated_at": "2025-09-09T13:53:27.676000"
+    },
+    {
+      "id": 282,
+      "name": "gardevoir",
+      "height": 16,
+      "weight": 484,
+      "base_experience": 233,
+      "types": [
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "synchronize",
+          "url": "https://pokeapi.co/api/v2/ability/28/",
+          "is_hidden": false
+        },
+        {
+          "name": "trace",
+          "url": "https://pokeapi.co/api/v2/ability/36/",
+          "is_hidden": false
+        },
+        {
+          "name": "telepathy",
+          "url": "https://pokeapi.co/api/v2/ability/140/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 68,
+        "attack": 65,
+        "defense": 65,
+        "special_attack": 125,
+        "special_defense": 115,
+        "speed": 80
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/282.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/282.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/282.png"
+      },
+      "created_at": "2025-09-09T15:54:10.912000",
+      "updated_at": "2025-09-09T15:54:10.912000"
+    },
+    {
+      "id": 74,
+      "name": "geodude",
+      "height": 4,
+      "weight": 200,
+      "base_experience": 60,
+      "types": [
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "rock-head",
+          "url": "https://pokeapi.co/api/v2/ability/69/",
+          "is_hidden": false
+        },
+        {
+          "name": "sturdy",
+          "url": "https://pokeapi.co/api/v2/ability/5/",
+          "is_hidden": false
+        },
+        {
+          "name": "sand-veil",
+          "url": "https://pokeapi.co/api/v2/ability/8/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 100,
+        "special_attack": 30,
+        "special_defense": 30,
+        "speed": 20
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/74.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/74.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/74.png"
+      },
+      "created_at": "2025-09-10T11:43:41.184000",
+      "updated_at": "2025-09-10T11:43:41.184000"
+    },
+    {
+      "id": 281,
+      "name": "kirlia",
+      "height": 8,
+      "weight": 202,
+      "base_experience": 97,
+      "types": [
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "synchronize",
+          "url": "https://pokeapi.co/api/v2/ability/28/",
+          "is_hidden": false
+        },
+        {
+          "name": "trace",
+          "url": "https://pokeapi.co/api/v2/ability/36/",
+          "is_hidden": false
+        },
+        {
+          "name": "telepathy",
+          "url": "https://pokeapi.co/api/v2/ability/140/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 38,
+        "attack": 35,
+        "defense": 35,
+        "special_attack": 65,
+        "special_defense": 55,
+        "speed": 50
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/281.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/281.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/281.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/281.png"
+      },
+      "created_at": "2025-09-09T15:54:19.723000",
+      "updated_at": "2025-09-09T15:54:19.723000"
+    },
+    {
+      "id": 448,
+      "name": "lucario",
+      "height": 12,
+      "weight": 540,
+      "base_experience": 184,
+      "types": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "steadfast",
+          "url": "https://pokeapi.co/api/v2/ability/80/",
+          "is_hidden": false
+        },
+        {
+          "name": "inner-focus",
+          "url": "https://pokeapi.co/api/v2/ability/39/",
+          "is_hidden": false
+        },
+        {
+          "name": "justified",
+          "url": "https://pokeapi.co/api/v2/ability/154/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 70,
+        "attack": 110,
+        "defense": 70,
+        "special_attack": 115,
+        "special_defense": 70,
+        "speed": 90
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/448.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/448.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/448.png"
+      },
+      "created_at": "2025-09-10T11:42:19.666000",
+      "updated_at": "2025-09-10T11:42:19.666000"
+    },
+    {
+      "id": 56,
+      "name": "mankey",
+      "height": 5,
+      "weight": 280,
+      "base_experience": 61,
+      "types": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "vital-spirit",
+          "url": "https://pokeapi.co/api/v2/ability/72/",
+          "is_hidden": false
+        },
+        {
+          "name": "anger-point",
+          "url": "https://pokeapi.co/api/v2/ability/83/",
+          "is_hidden": false
+        },
+        {
+          "name": "defiant",
+          "url": "https://pokeapi.co/api/v2/ability/128/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 35,
+        "special_attack": 35,
+        "special_defense": 45,
+        "speed": 70
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/56.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/56.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/56.png"
+      },
+      "created_at": "2025-09-10T11:56:30.392000",
+      "updated_at": "2025-09-10T11:56:30.392000"
+    },
+    {
+      "id": 151,
+      "name": "mew",
+      "height": 4,
+      "weight": 40,
+      "base_experience": 270,
+      "types": [
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "synchronize",
+          "url": "https://pokeapi.co/api/v2/ability/28/",
+          "is_hidden": false
+        }
+      ],
+      "stats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "special_attack": 100,
+        "special_defense": 100,
+        "speed": 100
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/151.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/151.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/151.png"
+      },
+      "created_at": "2025-09-09T13:48:07.311000",
+      "updated_at": "2025-09-09T13:48:07.311000"
+    },
+    {
+      "id": 150,
+      "name": "mewtwo",
+      "height": 20,
+      "weight": 1220,
+      "base_experience": 306,
+      "types": [
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "pressure",
+          "url": "https://pokeapi.co/api/v2/ability/46/",
+          "is_hidden": false
+        },
+        {
+          "name": "unnerve",
+          "url": "https://pokeapi.co/api/v2/ability/127/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 106,
+        "attack": 110,
+        "defense": 90,
+        "special_attack": 154,
+        "special_defense": 90,
+        "speed": 130
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/150.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/150.png"
+      },
+      "created_at": "2025-09-10T11:51:19.776000",
+      "updated_at": "2025-09-10T11:51:19.776000"
+    },
+    {
+      "id": 172,
+      "name": "pichu",
+      "height": 3,
+      "weight": 20,
+      "base_experience": 41,
+      "types": [
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "static",
+          "url": "https://pokeapi.co/api/v2/ability/9/",
+          "is_hidden": false
+        },
+        {
+          "name": "lightning-rod",
+          "url": "https://pokeapi.co/api/v2/ability/31/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 20,
+        "attack": 40,
+        "defense": 15,
+        "special_attack": 35,
+        "special_defense": 35,
+        "speed": 60
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/172.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/172.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/172.png"
+      },
+      "created_at": "2025-09-10T12:18:55.219000",
+      "updated_at": "2025-09-10T12:18:55.219000"
+    },
+    {
+      "id": 25,
+      "name": "pikachu",
+      "height": 4,
+      "weight": 60,
+      "base_experience": 112,
+      "types": [
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "static",
+          "url": "https://pokeapi.co/api/v2/ability/9/",
+          "is_hidden": false
+        },
+        {
+          "name": "lightning-rod",
+          "url": "https://pokeapi.co/api/v2/ability/31/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special_attack": 50,
+        "special_defense": 50,
+        "speed": 90
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/25.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/25.png"
+      },
+      "created_at": "2025-09-10T11:56:39.216000",
+      "updated_at": "2025-09-10T11:56:39.216000"
+    },
+    {
+      "id": 280,
+      "name": "ralts",
+      "height": 4,
+      "weight": 66,
+      "base_experience": 40,
+      "types": [
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "synchronize",
+          "url": "https://pokeapi.co/api/v2/ability/28/",
+          "is_hidden": false
+        },
+        {
+          "name": "trace",
+          "url": "https://pokeapi.co/api/v2/ability/36/",
+          "is_hidden": false
+        },
+        {
+          "name": "telepathy",
+          "url": "https://pokeapi.co/api/v2/ability/140/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 28,
+        "attack": 25,
+        "defense": 25,
+        "special_attack": 45,
+        "special_defense": 35,
+        "speed": 40
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/280.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/280.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/280.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/280.png"
+      },
+      "created_at": "2025-09-09T13:45:29.639000",
+      "updated_at": "2025-09-09T13:45:29.639000"
+    },
+    {
+      "id": 3,
+      "name": "venusaur",
+      "height": 20,
+      "weight": 1000,
+      "base_experience": 236,
+      "types": [
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "overgrow",
+          "url": "https://pokeapi.co/api/v2/ability/65/",
+          "is_hidden": false
+        },
+        {
+          "name": "chlorophyll",
+          "url": "https://pokeapi.co/api/v2/ability/34/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 82,
+        "defense": 83,
+        "special_attack": 100,
+        "special_defense": 100,
+        "speed": 80
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/3.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/3.png"
+      },
+      "created_at": "2025-09-09T13:45:13.970000",
+      "updated_at": "2025-09-09T13:45:13.970000"
+    }
+  ]
+}

@@ -7,7 +7,6 @@ import type {
   EventsResponse,
   AlertsResponse,
   DashboardResponse,
-  FileOperationResponse,
   CleanDataResponse,
   ReportResponse,
   Pokemon,
@@ -86,14 +85,12 @@ export const pipelineApi = {
   // File Operations
   exportCSV: (): Promise<Blob> =>
     api.post('/api/v1/pipeline/file/export-csv', {}, {
-      responseType: 'blob',
-      headers: { 'Accept': 'text/csv' }
+      responseType: 'blob'
     }).then((res) => res.data),
 
   exportJSON: (): Promise<Blob> =>
     api.post('/api/v1/pipeline/file/export-json', {}, {
-      responseType: 'blob',
-      headers: { 'Accept': 'application/json' }
+      responseType: 'blob'
     }).then((res) => res.data),
 
   cleanData: (): Promise<CleanDataResponse> =>

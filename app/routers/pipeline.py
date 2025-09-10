@@ -72,15 +72,21 @@ async def export_csv(
     file_proc: FileProcessorMCP = Depends(get_file_processor)
 ):
     """
-    Exporta dados dos pokémons para arquivo CSV.
+    Exporta dados dos pokémons para arquivo CSV e retorna o arquivo para download.
     """
     try:
         filepath = await file_proc.export_to_csv(filename)
-        return {
-            "success": True,
-            "message": "Exportação CSV concluída",
-            "filepath": filepath
-        }
+        file_path = Path(filepath)
+
+        if not file_path.exists():
+            raise HTTPException(status_code=404, detail="Arquivo não encontrado")
+
+        return FileResponse(
+            path=str(file_path),
+            filename=file_path.name,
+            media_type='text/csv',
+            headers={"Content-Disposition": f"attachment; filename={file_path.name}"}
+        )
     except Exception as e:
         logger.error(f"Erro na exportação CSV: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -92,15 +98,21 @@ async def export_json(
     file_proc: FileProcessorMCP = Depends(get_file_processor)
 ):
     """
-    Exporta dados dos pokémons para arquivo JSON.
+    Exporta dados dos pokémons para arquivo JSON e retorna o arquivo para download.
     """
     try:
         filepath = await file_proc.export_to_json(filename)
-        return {
-            "success": True,
-            "message": "Exportação JSON concluída",
-            "filepath": filepath
-        }
+        file_path = Path(filepath)
+
+        if not file_path.exists():
+            raise HTTPException(status_code=404, detail="Arquivo não encontrado")
+
+        return FileResponse(
+            path=str(file_path),
+            filename=file_path.name,
+            media_type='application/json',
+            headers={"Content-Disposition": f"attachment; filename={file_path.name}"}
+        )
     except Exception as e:
         logger.error(f"Erro na exportação JSON: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))

@@ -1,0 +1,16 @@
+id,name,height,weight,base_experience,types,abilities,hp,attack,defense,special_attack,special_defense,speed,created_at,updated_at
+65,alakazam,15,480,225,psychic,"synchronize,inner-focus,magic-guard",55,50,45,135,95,120,2025-09-09T13:45:14.091000,2025-09-09T13:45:14.091000
+9,blastoise,16,855,239,water,"torrent,rain-dish",79,83,100,85,105,78,2025-09-09T13:45:13.864000,2025-09-09T13:45:13.864000
+6,charizard,17,905,240,"fire,flying","blaze,solar-power",78,84,78,109,85,100,2025-09-09T13:45:13.760000,2025-09-09T13:45:13.760000
+132,ditto,3,40,101,normal,"limber,imposter",48,48,48,48,48,48,2025-09-09T13:53:27.676000,2025-09-09T13:53:27.676000
+282,gardevoir,16,484,233,"psychic,fairy","synchronize,trace,telepathy",68,65,65,125,115,80,2025-09-09T15:54:10.912000,2025-09-09T15:54:10.912000
+74,geodude,4,200,60,"rock,ground","rock-head,sturdy,sand-veil",40,80,100,30,30,20,2025-09-10T11:43:41.184000,2025-09-10T11:43:41.184000
+281,kirlia,8,202,97,"psychic,fairy","synchronize,trace,telepathy",38,35,35,65,55,50,2025-09-09T15:54:19.723000,2025-09-09T15:54:19.723000
+448,lucario,12,540,184,"fighting,steel","steadfast,inner-focus,justified",70,110,70,115,70,90,2025-09-10T11:42:19.666000,2025-09-10T11:42:19.666000
+56,mankey,5,280,61,fighting,"vital-spirit,anger-point,defiant",40,80,35,35,45,70,2025-09-10T11:56:30.392000,2025-09-10T11:56:30.392000
+151,mew,4,40,270,psychic,synchronize,100,100,100,100,100,100,2025-09-09T13:48:07.311000,2025-09-09T13:48:07.311000
+150,mewtwo,20,1220,306,psychic,"pressure,unnerve",106,110,90,154,90,130,2025-09-10T11:51:19.776000,2025-09-10T11:51:19.776000
+172,pichu,3,20,41,electric,"static,lightning-rod",20,40,15,35,35,60,2025-09-10T12:18:55.219000,2025-09-10T12:18:55.219000
+25,pikachu,4,60,112,electric,"static,lightning-rod",35,55,40,50,50,90,2025-09-10T11:56:39.216000,2025-09-10T11:56:39.216000
+280,ralts,4,66,40,"psychic,fairy","synchronize,trace,telepathy",28,25,25,45,35,40,2025-09-09T13:45:29.639000,2025-09-09T13:45:29.639000
+3,venusaur,20,1000,236,"grass,poison","overgrow,chlorophyll",80,82,83,100,100,80,2025-09-09T13:45:13.970000,2025-09-09T13:45:13.970000
