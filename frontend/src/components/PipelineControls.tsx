@@ -1,18 +1,19 @@
 import React from 'react';
-import { 
-  Play, 
-  Square, 
-  Bug, 
-  FileText, 
-  FileCode, 
-  Trash2, 
-  Calendar, 
-  CalendarDays, 
+import {
+  Play,
+  Square,
+  Bug,
+  FileText,
+  FileCode,
+  Trash2,
+  Calendar,
+  CalendarDays,
   BarChart3,
   Settings
 } from 'lucide-react';
 import { Card, CardHeader, CardContent } from './ui/Card';
 import { LoadingButton } from './ui/Loading';
+import { InfoTooltip, Tooltip } from './ui/Tooltip';
 import { 
   useStartStream, 
   useStopStream, 
@@ -44,16 +45,22 @@ export const PipelineControls: React.FC = () => {
   };
 
   const viewDashboard = () => {
-    window.open('/api/v1/pipeline/dashboard/html', '_blank');
+    window.open('http://localhost:8000/api/v1/pipeline/dashboard/html', '_blank');
   };
 
   return (
     <Card>
       <CardHeader>
-        <h5 className="text-lg font-semibold flex items-center">
-          <Settings className="w-5 h-5 mr-2" />
-          Controles da Pipeline
-        </h5>
+        <div className="flex items-center justify-between">
+          <h5 className="text-lg font-semibold flex items-center">
+            <Settings className="w-5 h-5 mr-2" />
+            Controles da Pipeline
+          </h5>
+          <InfoTooltip
+            content="Controle o processamento de dados em tempo real, exporte arquivos, gere relatórios e simule anomalias para testes."
+            position="left"
+          />
+        </div>
       </CardHeader>
       
       <CardContent>
@@ -95,32 +102,38 @@ export const PipelineControls: React.FC = () => {
           <div>
             <h6 className="font-medium mb-3 text-gray-700">Processamento de Arquivos</h6>
             <div className="flex flex-wrap gap-2">
-              <LoadingButton
-                isLoading={exportCSVMutation.isPending}
-                onClick={() => exportCSVMutation.mutate()}
-                className="btn-secondary btn-sm"
-              >
-                <FileText className="w-4 h-4 mr-2" />
-                Exportar CSV
-              </LoadingButton>
-              
-              <LoadingButton
-                isLoading={exportJSONMutation.isPending}
-                onClick={() => exportJSONMutation.mutate()}
-                className="btn-secondary btn-sm"
-              >
-                <FileCode className="w-4 h-4 mr-2" />
-                Exportar JSON
-              </LoadingButton>
-              
-              <LoadingButton
-                isLoading={cleanDataMutation.isPending}
-                onClick={() => cleanDataMutation.mutate()}
-                className="btn-secondary btn-sm"
-              >
-                <Trash2 className="w-4 h-4 mr-2" />
-                Limpar Dados
-              </LoadingButton>
+              <Tooltip content="Baixa todos os pokémons em formato CSV diretamente no seu computador">
+                <LoadingButton
+                  isLoading={exportCSVMutation.isPending}
+                  onClick={() => exportCSVMutation.mutate()}
+                  className="btn-secondary btn-sm"
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  Exportar CSV
+                </LoadingButton>
+              </Tooltip>
+
+              <Tooltip content="Baixa todos os pokémons em formato JSON diretamente no seu computador">
+                <LoadingButton
+                  isLoading={exportJSONMutation.isPending}
+                  onClick={() => exportJSONMutation.mutate()}
+                  className="btn-secondary btn-sm"
+                >
+                  <FileCode className="w-4 h-4 mr-2" />
+                  Exportar JSON
+                </LoadingButton>
+              </Tooltip>
+
+              <Tooltip content="Remove dados duplicados e inconsistentes do banco de dados">
+                <LoadingButton
+                  isLoading={cleanDataMutation.isPending}
+                  onClick={() => cleanDataMutation.mutate()}
+                  className="btn-secondary btn-sm"
+                >
+                  <Trash2 className="w-4 h-4 mr-2" />
+                  Limpar Dados
+                </LoadingButton>
+              </Tooltip>
             </div>
           </div>
 

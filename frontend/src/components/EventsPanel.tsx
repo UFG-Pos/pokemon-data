@@ -2,7 +2,8 @@ import React from 'react';
 import { RefreshCw, Clock, AlertTriangle } from 'lucide-react';
 import { Card, CardHeader, CardContent } from './ui/Card';
 import { Loading } from './ui/Loading';
-import { useEvents } from '../hooks/useApi'
+import { InfoTooltip } from './ui/Tooltip';
+import { useEvents } from '../hooks/useApi';
 import type { StreamEvent } from '../types/api';
 
 interface EventItemProps {
@@ -48,10 +49,17 @@ export const EventsPanel: React.FC = () => {
     <Card>
       <CardHeader>
         <div className="flex items-center justify-between">
-          <h5 className="text-lg font-semibold flex items-center">
-            <Clock className="w-5 h-5 mr-2" />
-            Eventos Recentes
-          </h5>
+          <div className="flex items-center">
+            <h5 className="text-lg font-semibold flex items-center">
+              <Clock className="w-5 h-5 mr-2" />
+              Eventos Recentes
+            </h5>
+            <InfoTooltip
+              content="Visualize eventos de processamento em tempo real, incluindo pokémons processados e anomalias detectadas."
+              position="top"
+              className="ml-2"
+            />
+          </div>
           <button
             onClick={handleRefresh}
             disabled={isFetching}

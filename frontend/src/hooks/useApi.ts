@@ -1,6 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { healthApi, pokemonApi, pipelineApi, handleApiError } from '../services/api';
 import { toast } from '../utils/toast';
+import { downloadBlob, generateFilename } from '../utils/download';
 
 // Query Keys
 export const queryKeys = {
@@ -133,12 +134,10 @@ export const useSimulateAnomaly = () => {
 export const useExportCSV = () => {
   return useMutation({
     mutationFn: pipelineApi.exportCSV,
-    onSuccess: (data) => {
-      if (data.success) {
-        toast.success(`CSV exportado: ${data.filepath}`);
-      } else {
-        toast.error('Erro ao exportar CSV');
-      }
+    onSuccess: (blob) => {
+      const filename = generateFilename('pokemon_data', 'csv');
+      downloadBlob(blob, filename);
+      toast.success(`CSV baixado: ${filename}`);
     },
     onError: (error) => {
       toast.error(`Erro ao exportar CSV: ${handleApiError(error)}`);
@@ -149,12 +148,10 @@ export const useExportCSV = () => {
 export const useExportJSON = () => {
   return useMutation({
     mutationFn: pipelineApi.exportJSON,
-    onSuccess: (data) => {
-      if (data.success) {
-        toast.success(`JSON exportado: ${data.filepath}`);
-      } else {
-        toast.error('Erro ao exportar JSON');
-      }
+    onSuccess: (blob) => {
+      const filename = generateFilename('pokemon_data', 'json');
+      downloadBlob(blob, filename);
+      toast.success(`JSON baixado: ${filename}`);
     },
     onError: (error) => {
       toast.error(`Erro ao exportar JSON: ${handleApiError(error)}`);

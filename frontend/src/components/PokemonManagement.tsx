@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Download, List, Sparkles, Search } from 'lucide-react';
 import { Card, CardHeader, CardContent } from './ui/Card';
 import { LoadingButton } from './ui/Loading';
+import { InfoTooltip } from './ui/Tooltip';
 import { useImportPokemon, usePokemons } from '../hooks/useApi';
 import type { Pokemon } from '../types/api';
 
@@ -62,7 +63,7 @@ export const PokemonManagement: React.FC = () => {
     refetch();
   };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter') {
       handleImport();
     }
@@ -71,10 +72,16 @@ export const PokemonManagement: React.FC = () => {
   return (
     <Card>
       <CardHeader>
-        <h5 className="text-lg font-semibold flex items-center">
-          <Download className="w-5 h-5 mr-2" />
-          Gerenciar Pokémons
-        </h5>
+        <div className="flex items-center justify-between">
+          <h5 className="text-lg font-semibold flex items-center">
+            <Download className="w-5 h-5 mr-2" />
+            Gerenciar Pokémons
+          </h5>
+          <InfoTooltip
+            content="Importe pokémons individuais ou em lote para o banco de dados. Visualize todos os pokémons cadastrados com suas informações e sprites."
+            position="left"
+          />
+        </div>
       </CardHeader>
       
       <CardContent>
@@ -86,7 +93,7 @@ export const PokemonManagement: React.FC = () => {
                 type="text"
                 value={pokemonName}
                 onChange={(e) => setPokemonName(e.target.value)}
-                onKeyPress={handleKeyPress}
+                onKeyDown={handleKeyDown}
                 placeholder="Nome do pokémon"
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               />

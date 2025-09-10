@@ -2,6 +2,7 @@ import React from 'react';
 import { RefreshCw, Bell, Trash2, TestTube, AlertTriangle, Info, XCircle } from 'lucide-react';
 import { Card, CardHeader, CardContent } from './ui/Card';
 import { Loading, LoadingButton } from './ui/Loading';
+import { InfoTooltip } from './ui/Tooltip';
 import { useAlerts, useTestAlert, useClearAlerts } from '../hooks/useApi';
 import type { Alert } from '../types/api';
 
@@ -68,10 +69,17 @@ export const AlertsPanel: React.FC = () => {
     <Card>
       <CardHeader>
         <div className="flex items-center justify-between">
-          <h5 className="text-lg font-semibold flex items-center">
-            <Bell className="w-5 h-5 mr-2" />
-            Alertas
-          </h5>
+          <div className="flex items-center">
+            <h5 className="text-lg font-semibold flex items-center">
+              <Bell className="w-5 h-5 mr-2" />
+              Alertas
+            </h5>
+            <InfoTooltip
+              content="Sistema de alertas para monitoramento de anomalias e eventos críticos. Teste e gerencie notificações."
+              position="top"
+              className="ml-2"
+            />
+          </div>
           <button
             onClick={handleRefresh}
             disabled={isFetching}

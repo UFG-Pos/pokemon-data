@@ -84,11 +84,17 @@ export const pipelineApi = {
     api.post(`/api/v1/pipeline/stream/simulate-anomaly?pokemon_name=${encodeURIComponent(pokemonName)}&anomaly_type=${anomalyType}`).then((res) => res.data),
 
   // File Operations
-  exportCSV: (): Promise<FileOperationResponse> =>
-    api.post('/api/v1/pipeline/file/export-csv').then((res) => res.data),
+  exportCSV: (): Promise<Blob> =>
+    api.post('/api/v1/pipeline/file/export-csv', {}, {
+      responseType: 'blob',
+      headers: { 'Accept': 'text/csv' }
+    }).then((res) => res.data),
 
-  exportJSON: (): Promise<FileOperationResponse> =>
-    api.post('/api/v1/pipeline/file/export-json').then((res) => res.data),
+  exportJSON: (): Promise<Blob> =>
+    api.post('/api/v1/pipeline/file/export-json', {}, {
+      responseType: 'blob',
+      headers: { 'Accept': 'application/json' }
+    }).then((res) => res.data),
 
   cleanData: (): Promise<CleanDataResponse> =>
     api.post('/api/v1/pipeline/file/clean-data').then((res) => res.data),
