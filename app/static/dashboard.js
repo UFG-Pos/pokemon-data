@@ -24,7 +24,22 @@ function showLoading() {
 }
 
 function hideLoading() {
-    loadingModal.hide();
+    if (loadingModal) {
+        loadingModal.hide();
+        // Garantir que o modal seja fechado mesmo em casos extremos
+        setTimeout(() => {
+            const modalElement = document.getElementById('loadingModal');
+            if (modalElement && modalElement.classList.contains('show')) {
+                modalElement.classList.remove('show');
+                modalElement.style.display = 'none';
+                document.body.classList.remove('modal-open');
+                const backdrop = document.querySelector('.modal-backdrop');
+                if (backdrop) {
+                    backdrop.remove();
+                }
+            }
+        }, 100);
+    }
 }
 
 function setButtonLoading(buttonElement, loading = true) {

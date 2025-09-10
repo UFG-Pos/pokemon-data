@@ -26,6 +26,8 @@ class StreamProcessorMCP:
         self.processing_interval = 5  # segundos
         self.anomaly_rules = self._initialize_anomaly_rules()
         self.recent_events = deque(maxlen=1000)  # Buffer para eventos recentes
+        self.processed_pokemons = {}  # Cache para evitar processamento duplicado
+        self.cache_duration = 300  # 5 minutos em segundos
         self.metrics = {
             'processed_count': 0,
             'anomalies_detected': 0,
@@ -86,7 +88,35 @@ class StreamProcessorMCP:
                 'enabled': True
             }
         ]
-    
+
+    def _clean_processed_cache(self):
+        """
+        Remove entradas antigas do cache de pokémons processados.
+        """
+        current_time = datetime.utcnow()
+        expired_keys = []
+
+        for pokemon_id, last_processed in self.processed_pokemons.items():
+            if (current_time - last_processed).total_seconds() > self.cache_duration:
+                expired_keys.append(pokemon_id)
+
+        for key in expired_keys:
+            del self.processed_pokemons[key]
+
+    def _should_process_pokemon(self, pokemon: Pokemon) -> bool:
+        """
+        Verifica se um pokémon deve ser processado baseado no cache.
+        """
+        current_time = datetime.utcnow()
+        last_processed = self.processed_pokemons.get(pokemon.id)
+
+        if last_processed is None:
+            return True
+
+        # Só processa novamente se passou mais de 5 minutos
+        time_since_last = (current_time - last_processed).total_seconds()
+        return time_since_last > self.cache_duration
+
     async def start_stream_processing(self):
         """
         Inicia o processamento em tempo real.
@@ -120,23 +150,38 @@ class StreamProcessorMCP:
         Processa um lote de dados em tempo real.
         """
         try:
+            # Limpar cache de pokémons processados
+            self._clean_processed_cache()
+
             # Buscar pokémons modificados recentemente (últimos 5 minutos)
             cutoff_time = datetime.utcnow() - timedelta(minutes=5)
-            
+
             # Simular stream - na prática, isso viria de um sistema de streaming real
             recent_pokemons = await self._get_recent_pokemons(cutoff_time)
-            
+
             if not recent_pokemons:
                 return
-            
-            logger.info(f"Processando {len(recent_pokemons)} pokémons no stream")
-            
-            for pokemon in recent_pokemons:
+
+            # Filtrar pokémons que já foram processados recentemente
+            pokemons_to_process = [
+                pokemon for pokemon in recent_pokemons
+                if self._should_process_pokemon(pokemon)
+            ]
+
+            if not pokemons_to_process:
+                logger.debug("Nenhum pokémon novo para processar")
+                return
+
+            logger.info(f"Processando {len(pokemons_to_process)} pokémons no stream (de {len(recent_pokemons)} candidatos)")
+
+            for pokemon in pokemons_to_process:
                 await self._process_pokemon_stream(pokemon)
                 self.metrics['processed_count'] += 1
-            
+                # Marcar como processado
+                self.processed_pokemons[pokemon.id] = datetime.utcnow()
+
             self.metrics['last_processed'] = datetime.utcnow()
-            
+
         except Exception as e:
             logger.error(f"Erro no processamento do lote: {str(e)}")
     
