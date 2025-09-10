@@ -1,0 +1,6 @@
+id,name,height,weight,base_experience,types,abilities,hp,attack,defense,special_attack,special_defense,speed,created_at,updated_at
+65,alakazam,15,480,225,psychic,"synchronize,inner-focus,magic-guard",55,50,45,135,95,120,2025-09-09T13:45:14.091000,2025-09-09T13:45:14.091000
+9,blastoise,16,855,239,water,"torrent,rain-dish",79,83,100,85,105,78,2025-09-09T13:45:13.864000,2025-09-09T13:45:13.864000
+6,charizard,17,905,240,"fire,flying","blaze,solar-power",78,84,78,109,85,100,2025-09-09T13:45:13.760000,2025-09-09T13:45:13.760000
+25,pikachu,4,60,112,electric,"static,lightning-rod",35,55,40,50,50,90,2025-09-09T13:45:13.646000,2025-09-09T13:45:13.646000
+3,venusaur,20,1000,236,"grass,poison","overgrow,chlorophyll",80,82,83,100,100,80,2025-09-09T13:45:13.970000,2025-09-09T13:45:13.970000

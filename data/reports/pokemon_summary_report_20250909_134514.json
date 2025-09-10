@@ -1,0 +1,145 @@
+{
+  "report_type": "summary",
+  "generated_at": "2025-09-09T13:45:14.128323",
+  "summary": {
+    "total_pokemons": 5,
+    "unique_types": 7,
+    "most_common_type": [
+      "psychic",
+      1
+    ],
+    "average_stats": {
+      "hp": 65.4,
+      "attack": 70.8,
+      "defense": 69.2,
+      "special_attack": 95.8,
+      "special_defense": 87.0,
+      "speed": 93.6
+    },
+    "strongest_pokemon": {
+      "name": "charizard",
+      "attack": 84
+    },
+    "fastest_pokemon": {
+      "name": "alakazam",
+      "speed": 120
+    }
+  },
+  "full_aggregations": {
+    "total_pokemons": 5,
+    "type_distribution": {
+      "psychic": 1,
+      "water": 1,
+      "fire": 1,
+      "flying": 1,
+      "electric": 1,
+      "grass": 1,
+      "poison": 1
+    },
+    "stats_summary": {
+      "hp": {
+        "mean": 65.4,
+        "min": 35,
+        "max": 80,
+        "median": 78
+      },
+      "attack": {
+        "mean": 70.8,
+        "min": 50,
+        "max": 84,
+        "median": 82
+      },
+      "defense": {
+        "mean": 69.2,
+        "min": 40,
+        "max": 100,
+        "median": 78
+      },
+      "special_attack": {
+        "mean": 95.8,
+        "min": 50,
+        "max": 135,
+        "median": 100
+      },
+      "special_defense": {
+        "mean": 87.0,
+        "min": 50,
+        "max": 105,
+        "median": 95
+      },
+      "speed": {
+        "mean": 93.6,
+        "min": 78,
+        "max": 120,
+        "median": 90
+      }
+    },
+    "top_attack": [
+      {
+        "name": "charizard",
+        "attack": 84
+      },
+      {
+        "name": "blastoise",
+        "attack": 83
+      },
+      {
+        "name": "venusaur",
+        "attack": 82
+      },
+      {
+        "name": "pikachu",
+        "attack": 55
+      },
+      {
+        "name": "alakazam",
+        "attack": 50
+      }
+    ],
+    "top_defense": [
+      {
+        "name": "blastoise",
+        "defense": 100
+      },
+      {
+        "name": "venusaur",
+        "defense": 83
+      },
+      {
+        "name": "charizard",
+        "defense": 78
+      },
+      {
+        "name": "alakazam",
+        "defense": 45
+      },
+      {
+        "name": "pikachu",
+        "defense": 40
+      }
+    ],
+    "top_speed": [
+      {
+        "name": "alakazam",
+        "speed": 120
+      },
+      {
+        "name": "charizard",
+        "speed": 100
+      },
+      {
+        "name": "pikachu",
+        "speed": 90
+      },
+      {
+        "name": "venusaur",
+        "speed": 80
+      },
+      {
+        "name": "blastoise",
+        "speed": 78
+      }
+    ],
+    "generation_timestamp": "2025-09-09T13:45:14.128282"
+  }
+}

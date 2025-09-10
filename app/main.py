@@ -1,5 +1,7 @@
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from contextlib import asynccontextmanager
 import os
 from dotenv import load_dotenv
@@ -58,6 +60,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Mount static files
+app.mount("/static", StaticFiles(directory="app/static"), name="static")
+
 # Include routers
 app.include_router(pokemon.router, prefix="/api/v1", tags=["pokemon"])
 app.include_router(pipeline.router, tags=["pipeline"])
@@ -65,6 +70,11 @@ app.include_router(pipeline.router, tags=["pipeline"])
 
 @app.get("/")
 async def root():
+    """Serve the frontend dashboard"""
+    return FileResponse("app/static/index.html")
+
+@app.get("/api")
+async def api_info():
     return {
         "message": "Pokemon Agent API",
         "version": "1.0.0",

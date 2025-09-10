@@ -1,0 +1,224 @@
+{
+  "export_timestamp": "2025-09-09T13:45:14.112095",
+  "total_pokemons": 5,
+  "data": [
+    {
+      "id": 65,
+      "name": "alakazam",
+      "height": 15,
+      "weight": 480,
+      "base_experience": 225,
+      "types": [
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "synchronize",
+          "url": "https://pokeapi.co/api/v2/ability/28/",
+          "is_hidden": false
+        },
+        {
+          "name": "inner-focus",
+          "url": "https://pokeapi.co/api/v2/ability/39/",
+          "is_hidden": false
+        },
+        {
+          "name": "magic-guard",
+          "url": "https://pokeapi.co/api/v2/ability/98/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 55,
+        "attack": 50,
+        "defense": 45,
+        "special_attack": 135,
+        "special_defense": 95,
+        "speed": 120
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/65.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/65.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/65.png"
+      },
+      "created_at": "2025-09-09T13:45:14.091000",
+      "updated_at": "2025-09-09T13:45:14.091000"
+    },
+    {
+      "id": 9,
+      "name": "blastoise",
+      "height": 16,
+      "weight": 855,
+      "base_experience": 239,
+      "types": [
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "torrent",
+          "url": "https://pokeapi.co/api/v2/ability/67/",
+          "is_hidden": false
+        },
+        {
+          "name": "rain-dish",
+          "url": "https://pokeapi.co/api/v2/ability/44/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 79,
+        "attack": 83,
+        "defense": 100,
+        "special_attack": 85,
+        "special_defense": 105,
+        "speed": 78
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/9.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/9.png"
+      },
+      "created_at": "2025-09-09T13:45:13.864000",
+      "updated_at": "2025-09-09T13:45:13.864000"
+    },
+    {
+      "id": 6,
+      "name": "charizard",
+      "height": 17,
+      "weight": 905,
+      "base_experience": 240,
+      "types": [
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "blaze",
+          "url": "https://pokeapi.co/api/v2/ability/66/",
+          "is_hidden": false
+        },
+        {
+          "name": "solar-power",
+          "url": "https://pokeapi.co/api/v2/ability/94/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "special_attack": 109,
+        "special_defense": 85,
+        "speed": 100
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/6.png"
+      },
+      "created_at": "2025-09-09T13:45:13.760000",
+      "updated_at": "2025-09-09T13:45:13.760000"
+    },
+    {
+      "id": 25,
+      "name": "pikachu",
+      "height": 4,
+      "weight": 60,
+      "base_experience": 112,
+      "types": [
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "static",
+          "url": "https://pokeapi.co/api/v2/ability/9/",
+          "is_hidden": false
+        },
+        {
+          "name": "lightning-rod",
+          "url": "https://pokeapi.co/api/v2/ability/31/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "special_attack": 50,
+        "special_defense": 50,
+        "speed": 90
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/25.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/25.png"
+      },
+      "created_at": "2025-09-09T13:45:13.646000",
+      "updated_at": "2025-09-09T13:45:13.646000"
+    },
+    {
+      "id": 3,
+      "name": "venusaur",
+      "height": 20,
+      "weight": 1000,
+      "base_experience": 236,
+      "types": [
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "overgrow",
+          "url": "https://pokeapi.co/api/v2/ability/65/",
+          "is_hidden": false
+        },
+        {
+          "name": "chlorophyll",
+          "url": "https://pokeapi.co/api/v2/ability/34/",
+          "is_hidden": true
+        }
+      ],
+      "stats": {
+        "hp": 80,
+        "attack": 82,
+        "defense": 83,
+        "special_attack": 100,
+        "special_defense": 100,
+        "speed": 80
+      },
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+        "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/3.png",
+        "back_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png",
+        "back_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/3.png"
+      },
+      "created_at": "2025-09-09T13:45:13.970000",
+      "updated_at": "2025-09-09T13:45:13.970000"
+    }
+  ]
+}

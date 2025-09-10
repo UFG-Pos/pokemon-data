@@ -1,0 +1,11 @@
+id,name,height,weight,base_experience,types,abilities,hp,attack,defense,special_attack,special_defense,speed,created_at,updated_at
+65,alakazam,15,480,225,psychic,"synchronize,inner-focus,magic-guard",55,50,45,135,95,120,2025-09-09T13:45:14.091000,2025-09-09T13:45:14.091000
+9,blastoise,16,855,239,water,"torrent,rain-dish",79,83,100,85,105,78,2025-09-09T13:45:13.864000,2025-09-09T13:45:13.864000
+6,charizard,17,905,240,"fire,flying","blaze,solar-power",78,84,78,109,85,100,2025-09-09T13:45:13.760000,2025-09-09T13:45:13.760000
+132,ditto,3,40,101,normal,"limber,imposter",48,48,48,48,48,48,2025-09-09T13:53:27.676000,2025-09-09T13:53:27.676000
+282,gardevoir,16,484,233,"psychic,fairy","synchronize,trace,telepathy",68,65,65,125,115,80,2025-09-09T15:54:10.912000,2025-09-09T15:54:10.912000
+281,kirlia,8,202,97,"psychic,fairy","synchronize,trace,telepathy",38,35,35,65,55,50,2025-09-09T15:54:19.723000,2025-09-09T15:54:19.723000
+151,mew,4,40,270,psychic,synchronize,100,100,100,100,100,100,2025-09-09T13:48:07.311000,2025-09-09T13:48:07.311000
+25,pikachu,4,60,112,electric,"static,lightning-rod",35,55,40,50,50,90,2025-09-09T13:45:13.646000,2025-09-09T13:45:13.646000
+280,ralts,4,66,40,"psychic,fairy","synchronize,trace,telepathy",28,25,25,45,35,40,2025-09-09T13:45:29.639000,2025-09-09T13:45:29.639000
+3,venusaur,20,1000,236,"grass,poison","overgrow,chlorophyll",80,82,83,100,100,80,2025-09-09T13:45:13.970000,2025-09-09T13:45:13.970000

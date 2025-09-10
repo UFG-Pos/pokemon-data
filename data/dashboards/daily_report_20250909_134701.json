@@ -1,0 +1,112 @@
+{
+  "report_type": "daily",
+  "date": "2025-09-09",
+  "generated_at": "2025-09-09T13:47:01.305255",
+  "summary": {
+    "total_pokemons": 6,
+    "daily_additions": 6,
+    "new_pokemons": [
+      {
+        "name": "alakazam",
+        "id": 65,
+        "types": [
+          "psychic"
+        ]
+      },
+      {
+        "name": "blastoise",
+        "id": 9,
+        "types": [
+          "water"
+        ]
+      },
+      {
+        "name": "charizard",
+        "id": 6,
+        "types": [
+          "fire",
+          "flying"
+        ]
+      },
+      {
+        "name": "pikachu",
+        "id": 25,
+        "types": [
+          "electric"
+        ]
+      },
+      {
+        "name": "ralts",
+        "id": 280,
+        "types": [
+          "psychic",
+          "fairy"
+        ]
+      },
+      {
+        "name": "venusaur",
+        "id": 3,
+        "types": [
+          "grass",
+          "poison"
+        ]
+      }
+    ]
+  },
+  "top_stats": {
+    "strongest_attack": {
+      "name": "charizard",
+      "id": 6,
+      "value": 84,
+      "types": [
+        "fire",
+        "flying"
+      ]
+    },
+    "highest_hp": {
+      "name": "venusaur",
+      "id": 3,
+      "value": 80,
+      "types": [
+        "grass",
+        "poison"
+      ]
+    },
+    "fastest": {
+      "name": "alakazam",
+      "id": 65,
+      "value": 120,
+      "types": [
+        "psychic"
+      ]
+    }
+  },
+  "data_quality": {
+    "quality_score": 100.0,
+    "total_records": 6,
+    "completeness": {
+      "missing_experience": 0,
+      "missing_types": 0,
+      "missing_abilities": 0
+    },
+    "anomalies": {
+      "negative_stats": 0,
+      "zero_stats": 0,
+      "extreme_stats": 0,
+      "duplicates": 0
+    },
+    "recommendations": [
+      "Qualidade dos dados está boa! Continue monitorando."
+    ]
+  },
+  "type_distribution": {
+    "psychic": 1,
+    "water": 1,
+    "fire": 1,
+    "flying": 1,
+    "electric": 1,
+    "fairy": 1,
+    "grass": 1,
+    "poison": 1
+  }
+}

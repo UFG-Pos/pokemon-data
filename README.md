@@ -99,6 +99,9 @@ poke-agent/
 │   │   ├── stream_processor.py     # MCP Stream Processor
 │   │   ├── dashboard_service.py    # Serviço de Dashboard
 │   │   └── alert_system.py         # Sistema de Alertas
+│   ├── static/                     # Frontend Dashboard
+│   │   ├── index.html              # Interface principal
+│   │   └── dashboard.js            # JavaScript do dashboard
 │   ├── __init__.py
 │   ├── config.py                   # Configurações
 │   └── main.py                     # Aplicação principal
@@ -120,29 +123,39 @@ poke-agent/
 └── README.md
 ```
 
-## Como Executar
+## 🚀 Como Usar
 
 ### Pré-requisitos
 
 - Docker
 - Docker Compose
 
-### Executando com Docker Compose
+### 1. Executando com Docker Compose
 
-1. Clone o repositório:
 ```bash
+# Clone o repositório
 git clone <repository-url>
 cd poke-agent
+
+# Execute a aplicação
+docker-compose up --build -d
 ```
 
-2. Execute a aplicação:
-```bash
-docker-compose up --build
-```
+### 2. 🎯 Acessar o Frontend Dashboard (RECOMENDADO)
 
-3. A API estará disponível em: http://localhost:8000
+**Interface Principal**: http://localhost:8000
 
-4. Documentação da API (Swagger): http://localhost:8000/docs
+O dashboard web oferece uma interface intuitiva para:
+- **🎮 Gerenciar Pokémons**: Importar, listar e visualizar
+- **⚙️ Controlar Pipeline**: Iniciar/parar stream processing
+- **🚨 Monitorar Alertas**: Visualizar alertas em tempo real
+- **📊 Gerar Relatórios**: Exportar dados e criar dashboards
+- **📈 Visualizar Métricas**: Status da pipeline e qualidade dos dados
+
+### 3. Outras Interfaces
+
+- **API Swagger**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
 
 ### Executando Localmente
 
